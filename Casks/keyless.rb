@@ -8,8 +8,7 @@ cask "keyless" do
   homepage "https://usekeyless.com/"
 
   livecheck do
-    url "https://cdn.flattro.bg/keyless/"
-    regex(/href=.*?Keyless[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    skip "Manually managed on CDN"
   end
 
   depends_on arch: :arm64
