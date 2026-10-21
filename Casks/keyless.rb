@@ -1,6 +1,6 @@
 cask "keyless" do
   version "1.0.1"
-  sha256 "cf010473445576b0357005d0dc8a16f11ce49d63c98362aedf8803b9cfa9e23a"
+  sha256 "YOUR_HASH"
 
   url "https://cdn.flattro.bg/keyless/Keyless-#{version}.dmg",
       verified: "cdn.flattro.bg/keyless/"
@@ -8,8 +8,8 @@ cask "keyless" do
   desc "Ultra-lightweight offline voice dictation for terminals and AI agents"
   homepage "https://usekeyless.com/"
 
-  depends_on macos: ">= :sonoma"
   depends_on arch: :arm64
+  depends_on macos: :sonoma
 
   app "Keyless.app"
 
@@ -19,3 +19,4 @@ cask "keyless" do
     "~/Library/Preferences/com.usekeyless.app.plist",
   ]
 end
+
