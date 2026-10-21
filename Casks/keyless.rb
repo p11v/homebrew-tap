@@ -1,6 +1,6 @@
 cask "keyless" do
-  version "1.0.0"
-  sha256 "75cbdbb38d9588e2b1367311f0732b78a48f4f707919a7bef831c4ec53340437"
+  version "1.0.1"
+  sha256 "cf010473445576b0357005d0dc8a16f11ce49d63c98362aedf8803b9cfa9e23a"
 
   url "https://cdn.flattro.bg/keyless/Keyless-#{version}.dmg",
       verified: "cdn.flattro.bg/keyless/"
