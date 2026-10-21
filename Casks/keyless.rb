@@ -7,6 +7,11 @@ cask "keyless" do
   desc "Ultra-lightweight offline voice dictation for terminals and AI agents"
   homepage "https://usekeyless.com/"
 
+  livecheck do
+    url "https://cdn.flattro.bg/keyless/"
+    regex(/href=.*?Keyless[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+  end
+
   depends_on arch: :arm64
   depends_on macos: :sequoia
 
